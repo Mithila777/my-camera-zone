@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+   
+}
+.registration{
+    width:45%;
+    margin: 5% auto;
+    padding: 4% 1% ;
+    height:70vh;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 2px 2px #888888;
+}
+.loginbutton,input[type=email],input[type=text],input[type=password],input[type=submit]{
+    width: 70%;
+    height:10% ;
+    margin: 1%;
+    padding: 2%;
+
+    border-radius:.4rem;
+    border: 1px solid silver;
+}
+
+ .form-submit{
+    padding: 2%;
+     background: black;
+     border: none;
+     color:white;
+}
+.loginbutton{
+    padding: 1%;
+     background: black;
+     border: none;
+     color:white;
+}
+p{
+    font-weight: bold;
+}
+@media only screen and (max-width: 700px) {
+    .registration{
+        width:80%;
+        margin: 10% ;
+        padding:  0 ;
+        height:80vh;
+    }
+    .loginbutton,input{
+        width: 80%;
+        height:8% ;
+        border-radius:.4rem;
+        border: 1px solid silver;
+    }
+   
+  }
+  @media only screen and (max-width: 900px) {
+    .registration{
+        width:80%;
+        margin: 10% ;
+        padding:  0 ;
+        height:50vh;
+    }
+    .loginbutton,input{
+        width: 80%;
+        height:10% ;
+        border-radius:.4rem;
+        border: 1px solid silver;
+    }
+   
+  }
+ 

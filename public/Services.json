@@ -1,0 +1,90 @@
+[   
+
+    
+      { 
+        "name": "EOS-1D X Mark III",
+        "description": "Making way for a new era in autofocus speed, accuracy and precision ",
+        "img": "https://i.ibb.co/cgbxPH4/c1.png",
+        "price":"$6,499.00",
+        "quantity": " 5",
+        "supplier": " Mark Prin"
+
+
+      },
+      { 
+        "name": "EOS 90D",
+        "description": " Whether capturing high-speed sporting events or simple, everyday moments",
+        "img": "https://i.ibb.co/169mjBw/c2.jpg",
+        "price":"$1,199.00",
+        "quantity": " 7",
+        "supplier": " David Malan"
+
+      },
+      { 
+        "name": "EOS 5D Mark IV",
+        "description": "The EOS 5D Mark IV camera builds on the powerful legacy of the 5D series",
+        "img": "https://i.ibb.co/Tk2m5g9/c3.png",
+        "price":"$1,399.00",
+        "quantity": " 3",
+        "supplier": "Ross Tylor"
+
+      },
+      { 
+        "name": " EOS 6D Mark II",
+        "description": "The Canon EOS 6D Mark II  puts full-frame performance into a compact.",
+        "img": "https://i.ibb.co/ft1jfMP/c4.png",
+        "price":"$1,099.00",
+        "quantity": " 10",
+        "supplier": "David Miller"
+
+      },
+    { 
+        "name": " EOS 5DS R",
+        "description": " The EOS 5DS R camera offers the  potential  for even greater sharpness  ",
+        "img": "https://i.ibb.co/ByRHG2b/c5.jpg",
+        "price":"$1,199.00",
+        "quantity": " 3",
+        "supplier": "David Warner"
+
+      },
+      { 
+        "name": "EOS Rebel T7 ",
+        "description": " Ideal for mobile device users to take next step with their photography",
+        "img": "https://i.ibb.co/SBrP0pV/c6.gif",
+        "price":"$1,199.00",
+        "quantity": " 14",
+        "supplier": "Mitchel Strac"
+
+      },
+      { 
+        "name": "EOS-1D X Mark III",
+        "description": "Making way for a new era in autofocus speed, accuracy and precision ",
+        "img": "https://i.ibb.co/cgbxPH4/c1.png",
+        "price":"$6,499.00",
+        "quantity": " 5",
+        "supplier": " Mark Prin"
+
+
+      },
+      { 
+        "name": "EOS 90D",
+        "description": " Whether capturing high-speed sporting events or simple, everyday moments",
+        "img": "https://i.ibb.co/169mjBw/c2.jpg",
+        "price":"$1,199.00",
+        "quantity": " 7",
+        "supplier": " David Malan"
+
+      },
+      { 
+        "name": "EOS 5D Mark IV",
+        "description": "The EOS 5D Mark IV camera builds on the powerful legacy of the 5D series",
+        "img": "https://i.ibb.co/Tk2m5g9/c3.png",
+        "price":"$1,399.00",
+        "quantity": " 3",
+        "supplier": "Ross Tylor"
+
+      }
+      
+      
+
+]
