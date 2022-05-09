@@ -10,7 +10,7 @@ const Footer = () => {
 <div class="row ">
   
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12"><div class="d-flex pt-4 justify-content-center">
-       <p class =" text-center p-5"> Copyright <i class="fa fa-copyright"></i> 2022 all rights reserved | Developed by Mithila Moni </p>
+       <p class =" text-center p-5"> Copyright   <i class="fa fa-copyright"></i>2022 all rights reserved | Developed by Mithila Moni </p>
     </div></div>
 
     <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">

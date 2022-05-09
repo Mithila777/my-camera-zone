@@ -1,0 +1,21 @@
+.itemtable{
+    
+    text-align: center;
+    margin: 2% 10%;
+
+
+  }
+  
+   td th,tr {
+    text-align: center;
+    align-items: flex-start;
+    border:1px solid black;
+
+  }
+  
+  
+  
+  .tableimage{
+      width:200px;
+      height: 100px;
+  }

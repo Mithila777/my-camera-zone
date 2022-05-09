@@ -8,6 +8,7 @@ import  image5   from  '../Images/dan-gold-m-u31puVzMQ-unsplash (1).jpg';
 import  image7  from  '../Images/alejandro-barba-c1BK0zKAMmQ-unsplash.jpg';
 import Product from '../Product/Product';
 import useProducts from '../hooks/useProducts';
+import { Link } from 'react-router-dom';
 
 
 
@@ -28,8 +29,9 @@ const Home = () => {
     <div class="col-md-6">
       <div class="image-discription "><div>
             <h1>TAKE A SHOT </h1>
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veritatis labore iste laborum quo minus! Accusantium ad, explicabo
-               minima culpa tempore placeat nihil adipisci distinctio! Perspiciatis cum in architecto maxime harum.
+            <p>Capture incredible detail with low-noise thanks to a full-frame sensor delivering 8K video recording up to 30fps
+               (or 60fps with an external power supply),oversampled 4K / Full HD content and captivating 4K slow-motion
+                up to 120fps.
 
             </p>
             <button class="btn  btn-dark rounded-0"> More info</button>
@@ -75,7 +77,12 @@ const Home = () => {
                         
               
               </div>
-
+              
+             <div className='mt-5'>
+             <Link to="/ManageCamera"> 
+        <button  className='btn btn-dark  text-light rounded-0'>Manage Camera</button>
+                 </Link> 
+             </div>
          </div>
 
              

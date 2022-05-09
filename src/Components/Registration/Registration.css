@@ -13,11 +13,11 @@
     border-radius: .5rem;
     box-shadow: 2px 2px 2px 2px #888888;
 }
-.loginbutton,input[type=email],input[type=text],input[type=password],input[type=submit]{
+.loginbutton,textarea,input[type=email],input[type=text],input[type=password],input[type=submit]{
     width: 70%;
-    height:10% ;
+    height:8% ;
     margin: 1%;
-    padding: 2%;
+    padding: 1%;
 
     border-radius:.4rem;
     border: 1px solid silver;

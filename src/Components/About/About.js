@@ -6,14 +6,15 @@ const About = () => {
     return (
         <div>
             <Container>
-             <p className='aboutme'>
-                 This is Mithila Moni. I complited my graduation from IUBAT.I like 
-                 Web developing . I want to became a seccessfull Web Developer.
-                 I already learned about  Front-end developing .Recently i am learning
-                 About Back-end devloping. Every day i spend 8-10 hours to learning 
-                 Web developing .If i  can  continue  this learning process  i one day 
-                 i will be successfull.
-             </p>
+            <h1>About Us</h1>
+            <p>
+            At CameraZone, customers can browse at convenience, and shop in a relaxed and pleasing atmosphere at all our stores. 
+           . Our continuous endeavor is to provide the consumers a delightful shopping experience through world-class ambience,
+            customer service and clearly  differentiated merchandising concepts. In a short period of time, our stores have 
+            become one of the most preferred   destinations in prime locations of Bangladesh and we are expanding aggressively.
+            </p>
+
+
             </Container>
 
         </div>

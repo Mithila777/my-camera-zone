@@ -16,7 +16,7 @@ const Header = () => {
     }
     return (
         <div >
-<Navbar className='header' expand="lg" bg="bg-lighten-xl" variant="light">
+<Navbar className='header sticky' expand="lg" bg="bg-lighten-xl" variant="light">
   <Container >
   <h5 className='title'>CAMERA ZONE</h5>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -24,7 +24,19 @@ const Header = () => {
     <Nav className="me-auto ">
       <Link as={Link} to="/">Home</Link>
       <Link as={Link} to="/Blog">Blog</Link>
-      <Link as={Link} to="/About">About</Link>
+      { user?
+      
+        <Link as={Link} to="/AddCamera">Add Product</Link>:<span></span>
+    
+      }
+             
+
+     { user?
+      
+      <Link as={Link} to="/ManageCamera">Manage Product</Link>:<span></span>
+  
+    }
+      <Link as={Link} to="/About">About Us</Link>
 
 
 
@@ -35,7 +47,7 @@ const Header = () => {
         
         user ?<button className='btn btn-link text-dark text-decoration-none' onClick={handleSignOut}>sign out</button>
                                 :
-         <Link as={Link} to="login">Sign In  </Link>}  
+                                <Link as={Link} to="login">Sign In  </Link>}  
      
        <button class="btn btn-sm btn-outline-dark rounded-0"><Link as={Link} to="/Registration">Sign Up</Link></button>
       
