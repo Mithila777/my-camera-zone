@@ -15,7 +15,7 @@ const Header = () => {
         signOut(auth);
     }
     return (
-    <div >
+    <div className=' shadow bottom' >
 <Navbar className='  sticky' expand="lg" bg="bg-lighten-xl" variant="light">
   <Container >
   <h5 className='title'>CAMERA ZONE</h5>
