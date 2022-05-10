@@ -15,8 +15,8 @@ const Header = () => {
         signOut(auth);
     }
     return (
-        <div >
-<Navbar className='header sticky' expand="lg" bg="bg-lighten-xl" variant="light">
+    <div >
+<Navbar className='  sticky' expand="lg" bg="bg-lighten-xl" variant="light">
   <Container >
   <h5 className='title'>CAMERA ZONE</h5>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
@@ -60,6 +60,7 @@ const Header = () => {
   </Navbar.Collapse>
   </Container>
 </Navbar>
+
             
         </div>
     );
