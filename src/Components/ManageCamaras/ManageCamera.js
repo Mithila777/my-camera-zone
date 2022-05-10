@@ -32,7 +32,7 @@ const ManageCamera = () => {
 
     return (
         <div>
-                 <h2>Manage Cameras</h2>
+                 <h2 className='mt-5'>Manage Cameras</h2>
 
             <div className='itemtable borderd '>
 
