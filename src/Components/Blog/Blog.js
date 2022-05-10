@@ -1,12 +1,14 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
+import './Blog.css'
 
 const Blog = () => {
     return (
-        <div>
+        <div className='blogs'>
             <Container>
-                <h3>1. Difference between javascript and nodejs ?</h3>
-                <p>
+               <div className=' border border-dark text-dark mt-5'>
+               <h3>1. Difference between javascript and nodejs ?</h3>
+                <p className=' '>
                 Node.js is a software platform that is used to build scalable network (especially server-side) 
                 applications. Node.js utilizes JavaScript as its scripting language, and achieves high throughput
                 via non-blocking I/O and a single-threaded event loop.Node.js contains a built-in HTTP server library,
@@ -18,7 +20,9 @@ const Blog = () => {
              the browser, communicate asynchronously, and alter the document content that is has also become common
                in server-side programming, game development and the creation of desktop applications.
                 </p>
+               </div>
 
+                <div className=' border border-dark text-dark mt-5'>
                 <h3>2.When should you use nodejs and when should you use mongodb?</h3>
                 <p>Node is server side javascript framework. It is asynchronous and is used mainly to develop
                      REST services which can be consumed by frontend. With node both client (browser code) and
@@ -34,6 +38,8 @@ const Blog = () => {
                     it is mostly used along with Nodejs.
 
                          </p>
+                </div>
+                  <div className='border border-dark text-dark mt-5'>
                   <h3>3.Differences between sql and nosql databases. ?</h3>
                   <p>
                   SQL stands for Structured Query Language, used for accessing and manipulating databases.
@@ -46,6 +52,8 @@ const Blog = () => {
                     traditional databases in which data is placed in tables and data schema is carefully 
                     designed before building the database.
                   </p>
+                  </div>
+
 
             </Container>
             
