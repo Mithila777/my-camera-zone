@@ -42,7 +42,7 @@ const Home = () => {
         </div>
 
 
-        <div class="container bg-dark text-light p-3 ps-0 pe-0">
+        <div class="container bg-dark text-light mt-5 p-3 ps-0 pe-0">
   <div class="row">
     <div class="col-sm">
        <p>2k+</p>
