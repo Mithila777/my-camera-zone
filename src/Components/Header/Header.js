@@ -36,6 +36,11 @@ const Header = () => {
       <Link as={Link} to="/ManageCamera">Manage Product</Link>:<span></span>
   
     }
+    { user?
+      
+      <Link as={Link} to="/Myitems">My Product</Link>:<span></span>
+  
+    }
       <Link as={Link} to="/About">About Us</Link>
 
 

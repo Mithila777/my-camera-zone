@@ -1,7 +1,10 @@
 import React from 'react';
+import { useAuthState } from 'react-firebase-hooks/auth';
+import auth from '../../firebase.init';
 
 const AddCamera = () => {
-    
+    const [user] = useAuthState(auth);
+
     const handleAddCamera = event =>{
         event.preventDefault();
         const addername = event.target.Addername.value;
@@ -11,10 +14,12 @@ const AddCamera = () => {
         const quantity = event.target.quentity.value;
         const supplier = event.target.supplier.value;
         const img = event.target.image.value;
+        const sold =0;
+
 
         
 
-        const camera = {addername,name,description,img, price,quantity,supplier};
+        const camera = {addername,name,description,img, price,quantity,supplier,sold};
 
            const url = `http://localhost:5000/camera`;
            fetch(url, {
@@ -27,7 +32,13 @@ const AddCamera = () => {
            .then(res=> res.json())
            .then(result =>{
             alert('Camera  added successfully!!!');
-
+             event.target.Addername.value='';
+             event.target.productName.value=''
+             event.target.description.value=''
+             event.target.price.value='';
+             event.target.quentity.value='';
+             event.target.supplier.value='';
+             event.target.image.value='';
                console.log(result);
            } )
     }
@@ -36,7 +47,7 @@ const AddCamera = () => {
             <div className='registration'>
             <h2>Add a new Product</h2>
             <form onSubmit={handleAddCamera}>
-                <input type="hidden" name="Addername" placeholder='Name' value='Mithila' required  />
+                <input type="hidden" name="Addername" placeholder='Name' value={user.displayName} required  />
                 <input type="text" name="productName" placeholder='Product Name' required />
                 <br/>
                 <textarea type="text" name="description" placeholder='Description' required />
@@ -49,7 +60,8 @@ const AddCamera = () => {
                 <input type="text" name="image" placeholder='Photo URL' required />
                 <br />
                 <input className='form-submit' type="submit" value="Add Product"  required/>
-
+    {                console.log(user)
+}
             </form>
             </div>
         </div>

@@ -26,7 +26,7 @@ const UpdateCamera = () => {
         const quantity = event.target.quentity.value;
         const supplier = event.target.supplier.value;
         const img = event.target.image.value;
-        const sold =0;
+        const sold =camera.sold;
 
         
 
@@ -45,13 +45,19 @@ const UpdateCamera = () => {
             console.log('success', data);
             alert('Camera  Update successfully!!!');
             event.target.reset();
+            event.target.Addername.value='';
+             event.target.productName.value=''
+             event.target.description.value=''
+             event.target.price.value='';
+             event.target.quentity.value='';
+             event.target.supplier.value='';
+             event.target.image.value='';
         })
     }
     return (
         <div>
             <div className='registration'>
-{            console.log(camera.description )
-}
+
             <h2>Update a Camera</h2>
             <form onSubmit={handleUpdateCamera}>
                 <input type="hidden" name="Addername" placeholder='Name' value='Mithila'  />

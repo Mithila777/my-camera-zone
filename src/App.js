@@ -9,6 +9,7 @@ import Header from './Components/Header/Header';
 import Home from './Components/Home/Home';
 import Login from './Components/Login/Login';
 import ManageCamera from './Components/ManageCamaras/ManageCamera';
+import Myitems from './Components/MyItems/Myitems';
 import PageNotFound from './Components/PagenotFound/PageNotFound';
 import ProductDetail from './Components/ProductDetial/ProductDetial';
 import Registration from './Components/Registration/Registration';
@@ -48,6 +49,11 @@ function App() {
         <Route path="/UpdateCamera/:Id" element={
           <RequireAuth>
             <UpdateCamera></UpdateCamera>
+          </RequireAuth>
+        }></Route>
+         <Route path="/Myitems" element={
+          <RequireAuth>
+            <Myitems></Myitems>
           </RequireAuth>
         }></Route>
     

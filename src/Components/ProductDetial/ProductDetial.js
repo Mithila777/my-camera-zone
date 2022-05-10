@@ -5,6 +5,7 @@ import './ProductDetail.css'
 const ProductDetail = () => {
     const { Id } = useParams();
     const [camera, setCamera] = useState({});
+    const [quantity,setQuantity] =useState();
 
     useEffect( () =>{
         const url = `http://localhost:5000/camera/${Id}`;
@@ -14,7 +15,7 @@ const ProductDetail = () => {
 
     }, []);
     const preQuentity =camera.quantity;
-    const preSold =camera.sold;
+    const preSold =parseInt(camera.sold);
     const addername =camera.addername;
         const name = camera.name;
         const description = camera.description;
@@ -24,11 +25,35 @@ const ProductDetail = () => {
 
     const manageQuentity =event =>{
         const quantity= preQuentity-1;
-      
 
-        const sold= preSold+1;
-       
-       
+        const sold= parseInt(preSold+1);
+        
+        const UpdateCamera= {addername, name,description,img, price,quantity,supplier,sold};
+        console.log(UpdateCamera);
+
+        const url = `http://localhost:5000/camera/${Id}`;
+        fetch(url, {
+            method: 'PUT',
+            headers: {
+                'content-type': 'application/json'
+            },
+            body: JSON.stringify(UpdateCamera)
+        })
+        .then(res => res.json())
+        .then(data =>{
+            console.log('success', data);
+            window.location.reload();
+            event.target.reset();
+
+
+
+        })
+
+    }
+
+    const updateQuentity =event =>{
+        const quantity = event.target.quentity.value;
+        const sold= camera.sold;
         
         const UpdateCamera= {addername, name,description,img, price,quantity,supplier,sold};
         console.log(UpdateCamera);
@@ -46,6 +71,7 @@ const ProductDetail = () => {
             console.log('success', data);
             alert('Camera  Update successfully!!!');
             event.target.reset();
+            window.location.reload();
 
 
         })
@@ -79,7 +105,16 @@ const ProductDetail = () => {
         <button  className='btn btn-dark  text-light rounded-0'>Manage Camera</button>
                  </Link> 
              </div>
+             <div className=' updatequantity registration '>
 
+<h2>Update Quantity</h2>
+<form onSubmit={updateQuentity}>
+<input type="text" name="quentity" placeholder='Quantity'  />
+<br/>
+<input className='form-submit' type="submit" value="Update quantity" />
+
+    </form>
+            </div>
 
 
 </div>
