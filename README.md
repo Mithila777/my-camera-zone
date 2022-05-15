@@ -7,7 +7,7 @@
  3. User can Delete Product
  4. Only register user can manage product.
  5. User can change password
- ###Feature:
+### Feature:
  1.Responive website
  2.Email varification
  3.user can login with google account
