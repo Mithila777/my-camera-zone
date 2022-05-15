@@ -90,11 +90,11 @@ const Login = () => {
 
                   {errors}
 
-
+                  <SocialLogin></SocialLogin>
+                  <ToastContainer />
             </form>
            
-            <SocialLogin></SocialLogin>
-            <ToastContainer />
+            
 
             </div>
             

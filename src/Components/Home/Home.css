@@ -6,8 +6,11 @@
      width:100%;
     }  
 
+    
  .image-box{
   height: 50vh;
+  
+
 
  }
 
@@ -17,47 +20,57 @@
     color:white;
     height: 100%;
     background-size: 70%  70%;
-    margin-top: 12%;
+    margin-top: 14%;
 
     
 }
 .image-discription{
- margin-top: 15%; 
+ margin-top: 13%; 
  text-align: left; 
+ padding: 2%;
+ border-left: 4px solid black;
+
 }
 .image-discription button{
   padding: 4px 40px;
   margin-top: 8%;
+  box-shadow: 5px 5px 4px 5px #888888;
+
+
 }
 
+.manage-button button{
+  padding: 4px 40px;
+  box-shadow: 5px 5px 4px 5px #888888;
 
+}
+.store-info p{
+  margin: 0em;
+}
  h1{
     font-size: 60px;
     font-weight: bold;
 }
 .products{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-gap: 2%;
-    margin: 0 5%;
+    margin: 0 0%;
 
 
 }
 
-.servie-title{
-    margin-top: 2%;
-    text-align: center;
-}
+
 
 
 .galary-title{
     margin-top: 50%;
-    color: black;
+    color: white;
 }
 .photo{
     height:540px ;
-    background-color: #f7f7f7;
-    color:black
+    background-color: rgb(15, 14, 14);
+    color:white;
 }
 
 h3{
@@ -146,51 +159,58 @@ h3{
   /* grid-column: 5 / span 4; */
   /* grid-row: 6 / span 3; */
 }
-@media only screen and (max-width: 600px) {
-  .main{
-    height: 30vh;
+@media only screen and (max-width: 767px) {
+  .image-box{
+    height: 35vh;
+    width: 100%;
+  
+   }
+  .image{
+    background-image: url(../Images/fujifilm-1362011.png);
     background-repeat: no-repeat;
     color:white;
-    background-size: cover;
+    background-size: 90%  65%;
+    margin-top: 5%;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 4%;
+
 
     
-    
 }
-.main .toptitle{
-    text-align: center;
-     padding-top: 16%;
-    color:white;
-    
-    
+.image-discription{
+ margin-top: 0%; 
+ text-align: left; 
+ padding: 2%;
+ padding-top: 0%;
+ border-left: 2px solid black;
 
 }
 .main h1{
-    font-size: 20px;
+    font-size: 5px;
 }
-.services{
-    display: grid;
-    grid-template-columns: 1fr ;
-    grid-gap:  2%;
-    margin: 0 0%;
+.products{
+  display: grid;
+  grid-template-columns:  1fr;
+  grid-gap: 0%;
+  margin: 0%;
+  margin-left: 0%;
 
 
 }
-
-.servie-title{
-    margin-top: 2%;
-    text-align: center;
-    margin-bottom: 2%;
-}
-
-
 .galary-title{
-    margin-top: 20%;
+  margin-top: 10%;
+  color: black;
 }
+
     .photo{
       height:300px ;
-      margin: 10 0;
+      margin: 0 0;
   }
   
+
+
+
   
   .gallery {
     display: grid;
@@ -200,3 +220,65 @@ h3{
   }
 
 }
+@media only screen and(min-width: 768px) and (max-width: 1023px) {
+  .image-box{
+    height: 35vh;
+    width: 100%;
+  
+   }
+  .image{
+    background-image: url(../Images/fujifilm-1362011.png);
+    background-repeat: no-repeat;
+    color:white;
+    background-size: 100%  55%;
+    margin-top: 15%;
+    margin-left: 0;
+    margin-bottom: 0;
+    padding: 4%;
+
+
+    
+}
+.image-discription{
+ margin-top: 0%; 
+ text-align: left; 
+ padding: 2%;
+ margin-top: 5%;
+ border-left: 2px solid black;
+
+}
+.main h1{
+    font-size: 5px;
+}
+.products{
+  display: grid;
+  grid-template-columns:  1fr 1fr;
+  grid-gap: 0%;
+  margin: 0%;
+  margin-left: 0%;
+
+
+}
+.galary-title{
+  margin-top: 10%;
+  color: black;
+}
+
+    .photo{
+      height:600px ;
+      margin: 0 0;
+  }
+  
+
+
+
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 6vw);
+    grid-gap: .3rem; 
+  }
+
+}
+

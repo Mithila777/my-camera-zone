@@ -1,3 +1,4 @@
+import React, { useEffect, useState } from 'react';
 import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import About from './Components/About/About';
@@ -15,19 +16,23 @@ import ProductDetail from './Components/ProductDetial/ProductDetial';
 import Registration from './Components/Registration/Registration';
 import RequireAuth from './Components/RequireAuth/RequireAuth';
 import UpdateCamera from './Components/UpdateCamera/UpdateCamera';
+import {BarLoader} from 'react-spinners'
 
 function App() {
+  
+
   return (
-    <div className="App">
+    
+     <div className="App">
       <Header></Header>
       <Routes>
-        <Route path="/" element={<Home></Home>}></Route>
-        <Route path="/Blog" element={<Blog></Blog>}></Route>
+     <Route path="/"  element={  <Home>  </Home>  }></Route>
+        <Route path="/Blog"  element={<Blog></Blog>}></Route>
 
-        <Route path="/About" element={<About></About>}></Route>
+        <Route path="/About"  element={<About></About>}></Route>
         <Route path="/Registration" element={<Registration></Registration>}></Route>
         <Route path="/Login" element={<Login></Login>}></Route>
-        <Route path="*" element={<PageNotFound></PageNotFound>}></Route>
+        <Route path="*"  element={<PageNotFound></PageNotFound>}></Route>
         <Route path='/Product/:Id' element={
         <RequireAuth><ProductDetail></ProductDetail></RequireAuth>}></Route>
 
@@ -46,12 +51,12 @@ function App() {
             <ManageCamera></ManageCamera>
           </RequireAuth>
         }></Route>
-        <Route path="/UpdateCamera/:Id" element={
+        <Route path="/UpdateCamera/:Id"  element={
           <RequireAuth>
             <UpdateCamera></UpdateCamera>
           </RequireAuth>
         }></Route>
-         <Route path="/Myitems" element={
+         <Route path="/Myitems"  element={
           <RequireAuth>
             <Myitems></Myitems>
           </RequireAuth>
@@ -59,9 +64,13 @@ function App() {
     
       </Routes>
       <Footer></Footer>
+       
      
     </div>
   );
+
+ 
 }
+
 
 export default App;

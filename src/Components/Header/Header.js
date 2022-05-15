@@ -1,6 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-import { Navbar , Container , Nav } from 'react-bootstrap';
+import { Link,NavLink } from 'react-router-dom';
+import { Navbar , Container , Nav  } from 'react-bootstrap';
 import './Header.css'
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { signOut } from 'firebase/auth';
@@ -15,33 +15,33 @@ const Header = () => {
         signOut(auth);
     }
     return (
-    <div className=' shadow bottom' >
+    <div className=' shadow bottom mt-1' >
 <Navbar className='  sticky' expand="lg" bg="bg-lighten-xl" variant="light">
   <Container >
   <h5 className='title'>CAMERA ZONE</h5>
   <Navbar.Toggle aria-controls="responsive-navbar-nav" />
   <Navbar.Collapse id="responsive-navbar-nav">
-    <Nav className="me-auto ">
-      <Link as={Link} to="/">Home</Link>
-      <Link as={Link} to="/Blog">Blog</Link>
+    <Nav className="me-auto vavbar ">
+      <NavLink  as={Link}  to="/" >Home</NavLink>
+      <NavLink   as={Link} to="/Blog" >Blogs</NavLink>
       { user?
       
-        <Link as={Link} to="/AddCamera">Add Product</Link>:<span></span>
+        <NavLink as={Link} to="/AddCamera">Add Product</NavLink>:<span></span>
     
       }
              
 
      { user?
       
-      <Link as={Link} to="/ManageCamera">Manage Product</Link>:<span></span>
+      <NavLink as={Link} to="/ManageCamera">Manage Product</NavLink>:<span></span>
   
     }
     { user?
       
-      <Link as={Link} to="/Myitems">My Product</Link>:<span></span>
+      <NavLink as={Link} to="/Myitems">My Product</NavLink>:<span></span>
   
     }
-      <Link as={Link} to="/About">About Us</Link>
+      <NavLink  as={Link} to="/About">About Us</NavLink>
 
 
 
@@ -52,9 +52,9 @@ const Header = () => {
         
         user ?<button className='btn btn-link text-dark text-decoration-none' onClick={handleSignOut}>sign out</button>
                                 :
-                                <Link as={Link} to="login">Sign In  </Link>}  
+                                <NavLink as={Link} to="login">Sign In  </NavLink>}  
      
-       <button class="btn btn-sm btn-outline-dark rounded-0"><Link as={Link} to="/Registration">Sign Up</Link></button>
+       <button class="btn btn-sm btn-outline-dark rounded-0"><NavLink as={Link} to="/Registration">Sign Up</NavLink></button>
       
     </Nav>
   </Navbar.Collapse>

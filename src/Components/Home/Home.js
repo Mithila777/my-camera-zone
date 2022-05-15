@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState, useEffect } from 'react';
 import './Home.css'
 import  image1   from  '../Images/l1.jpg';
 import  image2   from  '../Images/rsz_1freddy-do-zp6xo3akioe-unsplash.jpg';
@@ -9,32 +9,48 @@ import  image7  from  '../Images/alejandro-barba-c1BK0zKAMmQ-unsplash.jpg';
 import Product from '../Product/Product';
 import useProducts from '../hooks/useProducts';
 import { Link } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faStore } from '@fortawesome/free-solid-svg-icons';
+import { faTruckField } from '@fortawesome/free-solid-svg-icons';
+import { faUser} from '@fortawesome/free-solid-svg-icons';
+import { faArrowRight} from '@fortawesome/free-solid-svg-icons';
+
 
 
 
 
 const Home = () => {
+  // const [ spinner, setSpinner ] = useState(true);
+  // useEffect(() => {
+  //   setTimeout(() => setSpinner(false), 1000)
+  // }, []);
+
+
     const [products,setProducts]=useProducts();
-    
-    let size=6;
+    // const myproducts = products.find(Math.max());
+    // var  x = age.find(adult);
+
+    let size=8;
     return (
-        <div>
+      // !spinner &&  
+      <div>
+
         <div className='container'>
              <div class="row ">
-    <div className="col-md-6">
+    <div className="col-md-6 image-border">
      <div className=" image-box ">
        <div className='image'></div>
      </div>
     </div>
-    <div class="col-md-6">
-      <div class="image-discription "><div>
+    <div className="col-md-6">
+      <div className="image-discription "><div>
             <h1>TAKE A SHOT </h1>
             <p>Capture incredible detail with low-noise thanks to a full-frame sensor delivering 8K video recording up to 30fps
                (or 60fps with an external power supply),oversampled 4K / Full HD content and captivating 4K slow-motion
                 up to 120fps.
 
             </p>
-            <button class="btn  btn-dark rounded-0"> More info</button>
+            <button class="btn   btn-dark rounded-0"> More info</button>
 
         </div></div>
     </div>
@@ -42,19 +58,22 @@ const Home = () => {
         </div>
 
 
-        <div class="container bg-dark text-light mt-5 p-3 ps-0 pe-0">
+        <div class=" store-info bg-dark text-light mt-5 p-3 ps-0 pe-0">
   <div class="row">
-    <div class="col-sm">
-       <p>2k+</p>
-       <h6>Cameras</h6>
+    <div class="col-sm ">
+      <p><FontAwesomeIcon icon={faUser} /></p>
+       <p>Trusted by over 2k+ Clients</p>
+       <p>Since 2010</p>
     </div>
     <div class="col-sm">
-      <p>50+</p>
-      <h6>Suppliers</h6>
+      <p><FontAwesomeIcon icon={faTruckField} /></p>
+      <p>350+</p>
+      <p>Suppliers</p>
     </div>
     <div class="col-sm">
-      <p> 10+</p>
-      <h6>Stores</h6>
+      <p> <FontAwesomeIcon icon={  faStore}/></p>
+          <p>  20+</p>
+      <p> Stores</p>
     </div>
   </div>
 </div>
@@ -78,23 +97,23 @@ const Home = () => {
               
               </div>
               
-             <div className='mt-5'>
+             <div className='mt-5 mb-2 manage-button'>
              <Link to="/ManageCamera"> 
-        <button  className='btn btn-dark  text-light rounded-0'>Manage Camera</button>
+        <button  className='btn btn-dark  text-light rounded-0'>Manage Camera<span>  </span>
+        <FontAwesomeIcon icon={ faArrowRight}/></button>
                  </Link> 
              </div>
-         </div>
-
              
+         </div> 
 
 
          
 
          <div >
-    <div class="container  photo  h-200 px-2">
+    <div class="  photo  h-200 px-2">
   <div class="row gx-2">
     <div class="col-lg-4 col-sm-12">
-     <div class="   galary-title">   <h3> Best Camara Lans</h3>
+     <div class="   galary-title ">   <h3> Best Camara Lans</h3>
 </div>
     </div>
     <div class="col-lg-8 col-sm-12">

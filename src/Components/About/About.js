@@ -4,8 +4,7 @@ import './About.css'
 
 const About = () => {
     return (
-        <div>
-            <Container>
+        <div className='container'>
             <h1>About Us</h1>
             <p>
             At CameraZone, customers can browse at convenience, and shop in a relaxed and pleasing atmosphere at all our stores. 
@@ -15,7 +14,7 @@ const About = () => {
             </p>
 
 
-            </Container>
+            
 
         </div>
     );

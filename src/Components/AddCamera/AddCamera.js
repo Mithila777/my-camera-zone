@@ -60,8 +60,6 @@ const AddCamera = () => {
                 <input type="text" name="image" placeholder='Photo URL' required />
                 <br />
                 <input className='form-submit' type="submit" value="Add Product"  required/>
-    {                console.log(user)
-}
             </form>
             </div>
         </div>

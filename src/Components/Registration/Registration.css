@@ -13,7 +13,7 @@
     border-radius: .5rem;
     box-shadow: 2px 2px 2px 2px #888888;
 }
-.loginbutton,textarea,input[type=email],input[type=text],input[type=password],input[type=submit]{
+.registration .loginbutton,textarea,input[type=email],input[type=text],input[type=password],input[type=submit]{
     width: 70%;
     height:8% ;
     margin: 1%;
@@ -38,11 +38,11 @@
 p{
     font-weight: bold;
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 667px) {
     .registration{
         width:80%;
         margin: 10% ;
-        padding:  0 ;
+        padding:  0% ;
         height:80vh;
     }
     .loginbutton,input{
@@ -53,13 +53,14 @@ p{
     }
    
   }
-  @media only screen and (max-width: 900px) {
+  @media only screen and (max-width: 670px) {
     .registration{
-        width:80%;
+        width:85%;
         margin: 10% ;
-        padding:  0 ;
-        height:50vh;
+        padding:  5% 0 ;
+        height:60vh;
     }
+   
     .loginbutton,input{
         width: 80%;
         height:10% ;
