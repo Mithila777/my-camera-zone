@@ -99,7 +99,7 @@ const Home = () => {
               
              <div className='mt-5 mb-2 manage-button'>
              <Link to="/ManageCamera"> 
-        <button  className='btn btn-dark  text-light rounded-0'>Manage Camera<span>  </span>
+        <button  className='btn btn-dark  text-light rounded-0'>Manage Cameras <span>  </span>
         <FontAwesomeIcon icon={ faArrowRight}/></button>
                  </Link> 
              </div>
