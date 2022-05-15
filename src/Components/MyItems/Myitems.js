@@ -71,13 +71,13 @@ const Myitems = () => {
 
     return (
         <div  className='container'>
-                 <h2 className='mt-5 '>My Cameras</h2>
+                 <h2 className='mt-5 '>My  Cameras</h2>
 
             <div className='table-box'>
       <Table>
           <tr>
             <th align="right">Name</th>
-            <th align="right">Photo</th>
+            <th align="right">Image</th>
             <th align="right">Price</th>
             <th align="right">Quentity</th>
             <th align="right">Sold</th>
