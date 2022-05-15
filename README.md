@@ -1,3 +1,24 @@
+#Project Name: Camera Zone
+## Projet Live link:https://camara-zone.web.app/
+##Project Description:
+ ### Functionality:
+ 1. User can add product.
+ 2. User can Update Product
+ 3. User can Delete Product
+ 4. Only register user can manage product.
+ 5. User can change password
+ ###Feature:
+ 1.Responive website
+ 2.Email varification
+ 3.user can login with google account
+ 4.user can show his own added product
+ 5.meaningful 404 page (not found page)
+ 
+### technology used:
+ 1.Front-end:HTML,CSS,Bootstrap,JS,React
+ 2.Back-end:Express, JS, Node, Mongodb
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
